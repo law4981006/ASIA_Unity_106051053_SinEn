@@ -1,18 +1,45 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ZombieContrl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    #region 欄位區域
+    Rigidbody ZombieRidge;
+    Animator ZombiAnime;
+
+    [Tooltip("移動速度")][Range(1,100)]
+    public float speed;
+    [Tooltip("旋轉速度")][Range(1.5f,200f)]
+    public float turnSpeed;
+    #endregion
+
+    #region 方法區域
+    /// <summary>
+    /// 跑步方法
+    /// </summary>
+    private void Run()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// 旋轉方法
+    /// </summary>
+    private void Turn()
     {
-        
+
+    }
+
+    /// <summary>
+    /// 撿東西方法
+    /// </summary>
+    private void PickUp()
+    {
+
+    }
+    #endregion
+
+    void Start()
+    {
+
     }
 }
